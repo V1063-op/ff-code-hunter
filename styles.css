@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{color-scheme:dark;--bg:#0b0d11;--panel:#141820;--panel2:#1b202a;--line:#2b303b;--muted:#9aa2b1;--text:#f4f5f7;--orange:#ff7628;--orange2:#ff9b4a;--green:#52d69a}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 80% 0%,#2a1a13 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;min-height:100vh}
+.shell{width:min(980px,100%);margin:auto;padding:28px 22px 38px}
+.topbar,.brand,.toolbar,.actions,.code-top,.code-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{justify-content:flex-start}
+.brand-mark{width:48px;height:48px;display:grid;place-items:center;background:linear-gradient(135deg,#ff9b4a,#e94d16);border-radius:14px;color:#17100c;font:800 21px 'Barlow Condensed',sans-serif;box-shadow:0 8px 28px #ff762833}
+h1,h2,h3,p{margin:0}
+.brand h1{font:800 24px 'Barlow Condensed',sans-serif;letter-spacing:1.2px}
+.brand p,.eyebrow,.stat-card span,footer p{font-size:10px;letter-spacing:1.7px;color:var(--muted);font-weight:700}
+.pill{font-size:10px;font-weight:800;letter-spacing:1px;border-radius:30px;padding:8px 12px;border:1px solid var(--line)}
+.pill.ok{color:var(--green);border-color:#28684d;background:#123022}
+.pill.muted{color:var(--muted)}
+.hero{margin-top:28px;padding:30px;border:1px solid #493020;border-radius:22px;background:linear-gradient(115deg,#24170f,#171a21 70%);display:flex;align-items:center;justify-content:space-between;overflow:hidden}
+.eyebrow{color:var(--orange2);margin-bottom:12px}
+.hero h2{font:800 clamp(34px,6vw,58px)/.98 'Barlow Condensed',sans-serif;letter-spacing:.4px}
+.hero h2 span{color:var(--orange)}
+.hero-copy{max-width:500px;color:#b5bac4;font-size:13px;line-height:1.7;margin-top:14px}
+.hero-icon{font-size:110px;color:#ff762855;line-height:1}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.stat-card,.code-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:17px}
+.stat-card strong{display:block;font:800 28px 'Barlow Condensed',sans-serif;margin-top:7px}
+.toolbar{margin:30px 0 14px;align-items:flex-end}
+.toolbar h3{font:800 21px 'Barlow Condensed',sans-serif;letter-spacing:.7px}
+.toolbar p{color:var(--muted);font-size:12px;margin-top:5px}
+.button{border:0;border-radius:10px;padding:11px 15px;font-weight:800;font-size:12px;cursor:pointer}
+.button:disabled{opacity:.55;cursor:wait}
+.primary{background:var(--orange);color:#1b1009}
+.secondary{background:#252b36;color:#e9ebef;border:1px solid #3a414e}
+.notice{padding:13px 15px;border-radius:12px;font-size:12px;line-height:1.5;margin:12px 0}
+.error{background:#351c1d;border:1px solid #71383a;color:#ffc5c5}
+.hidden{display:none!important}
+.empty{text-align:center;padding:42px 16px;border:1px dashed #343a46;border-radius:16px;color:var(--muted)}
+.empty-symbol{font-size:40px;color:var(--orange);margin-bottom:10px}
+.empty h3{color:var(--text);font-size:16px;margin-bottom:7px}
+.empty p{font-size:12px;line-height:1.6;max-width:440px;margin:auto}
+.code-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.code-card{min-width:0}
+.code-top{align-items:flex-start}
+.code{font:800 22px 'Barlow Condensed',sans-serif;letter-spacing:1.4px;overflow-wrap:anywhere}
+.status{font-size:9px;letter-spacing:1px;font-weight:800;padding:6px 8px;border-radius:30px;background:#3a2b1d;color:#ffbd7e;white-space:nowrap}
+.code-meta{font-size:11px;color:var(--muted);line-height:1.6;margin:12px 0}
+.code-meta a{color:#ffad70;text-decoration:none}
+.code-bottom{border-top:1px solid var(--line);padding-top:11px}
+.code-bottom small{font-size:10px;color:var(--muted)}
+.copy{background:#252b36;color:#fff;border:1px solid #3a414e;border-radius:8px;padding:8px 11px;font-size:11px;font-weight:700;cursor:pointer}
+footer{border-top:1px solid var(--line);margin-top:34px;padding-top:18px;display:flex;flex-direction:column;gap:8px}
+footer p{letter-spacing:.7px;font-size:9px}
+footer a{color:var(--orange2);font-size:12px;text-decoration:none;margin-top:4px}
+@media(max-width:650px){.shell{padding:20px 15px 30px}.hero{padding:23px}.hero-icon{font-size:65px}.stats{gap:8px}.stat-card{padding:13px 11px}.stat-card strong{font-size:23px}.toolbar{align-items:flex-start;flex-direction:column}.actions{width:100%}.actions button{flex:1}.code-list{grid-template-columns:1fr}.brand h1{font-size:21px}}

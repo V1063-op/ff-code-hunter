@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111318">
+  <meta name="description" content="FF Code Hunter — public redeem-code discovery dashboard">
+  <title>FF CODE HUNTER</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">FF</div>
+        <div>
+          <h1>FF CODE HUNTER</h1>
+          <p>GEMINI-POWERED CODE DISCOVERY</p>
+        </div>
+      </div>
+      <span id="statusPill" class="pill muted">LOADING</span>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">INTELLIGENCE DASHBOARD</p>
+        <h2>Find new codes.<br><span>Skip the duplicates.</span></h2>
+        <p class="hero-copy">Scans public article sources every 15 minutes. Codes are unverified until Garena accepts them.</p>
+      </div>
+      <div class="hero-icon" aria-hidden="true">⌁</div>
+    </section>
+
+    <section class="stats" aria-label="Code statistics">
+      <article class="stat-card"><span>DISCOVERED</span><strong id="totalCount">0</strong></article>
+      <article class="stat-card"><span>NEWEST 15</span><strong id="shownCount">0</strong></article>
+      <article class="stat-card"><span>LAST SCAN</span><strong id="lastScan">—</strong></article>
+    </section>
+
+    <section class="toolbar">
+      <div>
+        <h3>CODE INTELLIGENCE</h3>
+        <p id="scanMessage">Loading latest scan information…</p>
+      </div>
+      <div class="actions">
+        <button id="notifyBtn" class="button secondary">Enable alerts</button>
+        <button id="refreshBtn" class="button primary">Refresh</button>
+      </div>
+    </section>
+
+    <section id="errorBox" class="notice error hidden"></section>
+    <section id="emptyState" class="empty">
+      <div class="empty-symbol">⌕</div>
+      <h3>No codes discovered yet</h3>
+      <p>The dashboard will show codes after the first successful scan finds candidate codes in an article.</p>
+    </section>
+    <section id="codeList" class="code-list" aria-live="polite"></section>
+
+    <footer>
+      <p>FF CODE HUNTER · COMMUNITY DISCOVERY TOOL</p>
+      <p>Not affiliated with Garena. No code is guaranteed to work.</p>
+      <a href="https://reward.ff.garena.com/" target="_blank" rel="noopener">Open official Garena redemption page ↗</a>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
