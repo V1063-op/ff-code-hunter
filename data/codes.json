@@ -1,6 +1,6 @@
 {
-  "updated_at": null,
-  "scan_status": "Not scanned yet \u2014 waiting for the first scheduled run.",
+  "updated_at": "2026-11-11T05:48:57+00:00",
+  "scan_status": "Scan complete · 0 article(s) analysed · 0 new candidate(s)",
   "last_error": null,
   "codes": []
 }
