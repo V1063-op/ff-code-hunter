@@ -1,0 +1,7 @@
+{
+  "rss_feeds": [
+    "https://news.google.com/rss/search?q=site%3Asundayguardianlive.com+Free+Fire+redeem+codes&hl=en-IN&gl=IN&ceid=IN%3Aen"
+  ],
+  "max_articles_per_scan": 12,
+  "article_lookback_hours": 72
+}
